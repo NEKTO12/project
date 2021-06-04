@@ -37,43 +37,208 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
-body
-{
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ebf1f6+0,89c3eb+45,89c3eb+45,abd3ee+50,d5ebfb+100 */
-background: #ebf1f6; /* Old browsers */
-background: -moz-linear-gradient(top,  #ebf1f6 0%, #89c3eb 45%, #89c3eb 45%, #abd3ee 50%, #d5ebfb 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #ebf1f6 0%,#89c3eb 45%,#89c3eb 45%,#abd3ee 50%,#d5ebfb 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #ebf1f6 0%,#89c3eb 45%,#89c3eb 45%,#abd3ee 50%,#d5ebfb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
 
-}
-.head {
+header 
+{
 	border-radius:10px;
 	display: flex;
 	position: fixed;
-background-color: #acadad;
-color: #000;
-top: 0;
-left: 0;
-height: 60px;
-width: 100%
+	background-color: #797979;
+	color: #000;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 100%
 }
-.image_header
+.header__logo
 {
 	height: 60px;
 	border-radius: 10px;
 }
-.header
+.header__menu-item
 {
-
 	margin: 10px;
 	font-size: 32px;
 }
-
-.info
+footer
 {
- background-color: #FFF;
- margin: 100px 100px 50px 100px;
- width: 90%;
- height: 1000px;
+	display: flex;
+	width: 100%;
+	margin-bottom: auto;
+	background-color: rgb(59, 61, 179);
+}
+.form
+{
+	width: 20%;
+	background-color: rgb(0, 2, 128);
+	display: flex;
+	margin: 10px;
+	font-size: 20px;
+}
+.form__footer
+{
+	position: relative;
+}
+.form__footer::after
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #3a3939c5;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease 0s;
+}
+.form__footer._sending::after
+{
+	opacity: 1;
+	visibility: visible;
+}
+textarea.form__item__input
+{
+	min-height: 80px;
+	resize: vertical;
+}
+.form__title
+{
+	margin: 0px 0px 20px 0px;
+	font-size: 30px;
+	font-weight: 700px;
+}
+.form__item
+{
+	margin-bottom: 5px;
+}
+.form__item__input
+{	padding: 5px;
+	font-size: 18px;
+	margin: 0px;
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	transition: box-shadow 0.5s ease 0s;
+}
+.form__item__input._error
+{
+	box-shadow: 0 0 15px red;
+}
+.form__item__label
+{
+	display: block;
+	margin-bottom:  5px;
+}
+.file__item
+{
+	position: relative;
+}
+.file__item__input
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 27%;
+	height: 100%;
+	opacity: 0;
+	font-size: 0;
+	cursor: pointer;
+}
+.file__button
+{
+	display: inline-flex;
+	min-height: 30px;
+	border-radius: 30px;
+	justify-content: center;
+	align-items: center;
+	background-color: #797979;
+	padding: 0px 20px;
+}
+.file__preview
+{
+	display: inline-block;
+	max-width: 100px;
+	padding: 5px;
+}
+.file__preview img
+{
+	max-width: 100%;
+}
+.form__item__checkbox
+{
+	display: none;
+}
+.form__item__checkbox:checked + .checkbox__lable::after
+{
+transform: scale(1);
+}
+.checkbox__lable
+{
+	font-size: 18px;
+	line-height: 140%;
+	display: inline-flex;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+.checkbox__lable a
+{
+	color: #797979;
+}
+.checkbox__lable::before
+{
+	transition: box-shadow 0.5s ease 0s;
+	content:"";
+	align-self: flex-start;
+	flex: 0 0 24px;
+	height: 24px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 4px;
+	margin: 0px 10px 0px 0px;
+}
+.checkbox__lable::after
+{	
+	transition: transform 0.2s ease 0s;
+	content: "";
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	background-color: #797979;
+	border-radius: 4px;
+	transform: scale(0);
+}
+.checkbox._error .checkbox__lable::before
+{
+	box-shadow: 0 0 15px red;
+}
+.form__item__button
+{	
+	width: 97%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 30px;
+	background-color: #797979;
+	font-size: 20px;	
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: 30px;
+	margin: 5px 5px 20px 5px;
+	padding: 10px;
+	box-shadow: 0 3px 0 #3a3939;
+	transition: background-color 0.5s ease 0s;
+	transition: margin 50ms ease 0s;
+	transition: box-shadow 50ms ease 0s;
+}
+.form__item__button:hover
+{
+	background-color: #7c9bb4
+}
+.form__item__button:active
+{
+	margin: 8px 5px 17px 5px;
+	box-shadow: 0 0 0 #3a3939;
 }
