@@ -11,100 +11,132 @@
 		<title>REFRESH</title>
 		<!-- Подключение CSS -->
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
 	</head>
 	
 	<body>
 		<header class="header">
-			<a href="#"><img class="header__logo" src='img/Screenshot_4.png'></a>
+			<a class="header__logo" href="#"><span>RE</span>FRESH</a>
 			<nav class="header__menu">
 				<ul class="header__menu-list">
-					<li class="header__menu-item"><a class="header__menu-link" href="#services">послуги</a> </li>
-					<li class="header__menu-item"><a class="header__menu-link" href="#about">про нас</a> </li>
-					<li class="header__menu-item"><a class="header__menu-link" href="#contacts">контакти</a></li>
+					<li class="header__menu-item"><a class="header__menu-link" href="#services">Послуги</a> </li>
+					<li class="header__menu-item"><a class="header__menu-link" href="#about">Про нас</a> </li>
+					<li class="header__menu-item"><a class="header__menu-link" href="#contacts">Контакти</a></li>
 				</ul>
 			</nav>
 		</header>
-
-	<section id="services" class="services">
-		<h1 class="services__title">послуги</h1>
-		<ul class="services__info">
-			<li class="services__item">
-				ремонт телефонів, заміна сенсору і заміна модуля.
-			</li>
-			<li class="services__item">
-				Пайка роз'ємів у телефонах, ноутбуках, планшетах и ПК. 
-			</li>
-			<li class="services__item">
-				Сервисне обслуговування (чистка ноутбуків, комп'ютерів і телефонів).
-			</li>
-			<li class="services__item">
-				Ремонт моніторів. 
-			</li>
-			<li class="services__item">
-				Установка й налаштування операційних систем і програмного забезбечення.
-			</li>
-			<li class="services__item">
-				<strong>Безкоштовна</strong> консультація и діагностика! Низькі ціни! Гарантія якості!
-			</li>
-		</ul>
-	</section>
-	
-	<section id="about" class="about">
-		<h2 class="about__title">про нас</h2>
-	</section>
-	<div class="about__info">
-		<!--как указанно в инсте-->
-		Безкоштовна консультацiя та дiагностика!Низькi цiни! Гарантiя якостi!"Refresh" 
-	</div>
-	<footer class="footer">
-		<div class="form">
-			<form action="#" id="form" class="form__footer">
-				<h2 class="form__title">Задати питання</h2>
-				<div class="form__item">
-					<label for="formName" class="form__item__label">Ім'я*:</label>
-					<input type="text" name="Name" id="formName" class="form__item__input _req"  >
+		<section id="about" class="about">
+			<div class="content">
+				<div class="content__container">
+				  <ul class="content__container__list">
+					<li class="content__container__list__item">Безкоштовна консультацiя та дiагностика!</li>
+					<li class="content__container__list__item">Низькi цiни!</li>
+					<li class="content__container__list__item">Гарантiя якостi! </li>
+					<li class="content__container__list__item">REFRESH</li>
+				  </ul>
 				</div>
-				<div class="form__item">
-					<label for="formEmail" class="form__item__label">Пошта*:</label>
-					<input type="text" name="email" id="formEmail" class="form__item__input _req _email" >
-				</div>
-				<div class="form__item">
-					<labael for="formMessage" class="form__item__label">Повідомлення:</labael>
-					<textarea name="Message" id="formMessage" class="form__item__input" ></textarea>	
-				</div>
-				<div class="form__item">
-					<div class="form__item__label">Додати фото:</div>
-					<div class="file">
-						<div class="file__item">
-							<input id="formImage" name="Image" accept=".jpg, .jpeg, .png, .gif" type="file" class="file__item__input">
-							<div  class="file__button">Обрати</div>
+			  </div>
+		</section>
+		<section id="services" class="services">
+			<h1 class="services__title">Послуги:</h1>
+			<ul class="services__info">
+				<li class="services__item">
+					Ремонт телефонів, заміна сенсору і заміна модуля.
+				</li>
+				<li class="services__item">
+					Пайка роз'ємів у телефонах, ноутбуках, планшетах и ПК. 
+				</li>
+				<li class="services__item">
+					Сервисне обслуговування (чистка ноутбуків, комп'ютерів і телефонів).
+				</li>
+				<li class="services__item">
+					Ремонт моніторів. 
+				</li>
+				<li class="services__item">
+					Установка й налаштування операційних систем і програмного забезбечення.
+				</li>
+				<li class="services__item">
+					<strong>Безкоштовна</strong> консультація и діагностика! Низькі ціни! Гарантія якості!
+				</li>
+			</ul>
+			<div class="services__imgs">
+				<img class="services__img" src="img/do_posle1.png" alt="картинка">
+				<img class="services__img" src="img/do_posle2.png" alt="картинка">
+				<img class="services__img" src="img/do_posle3.png" alt="картинка">
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="form">
+				<form action="#" id="form" class="form__footer">
+					<h2 class="form__title">Задати питання</h2>
+					<div class="form__item">
+						<label for="formName" class="form__item__label">Ім'я*:</label>
+						<input type="text" name="Name" id="formName" class="form__item__input _req"  >
+					</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__item__label">Пошта*:</label>
+						<input type="text" name="email" id="formEmail" class="form__item__input _req _email" >
+					</div>
+					<div class="form__item">
+						<labael for="formMessage" class="form__item__label">Повідомлення:</labael>
+						<textarea name="Message" id="formMessage" class="form__item__input" ></textarea>	
+					</div>
+					<div class="form__item">
+						<div class="form__item__label">Додати фото:</div>
+						<div class="file">
+							<div class="file__item">
+								<input id="formImage" name="Image" accept=".jpg, .jpeg, .png, .gif" type="file" class="file__item__input">
+								<div  class="file__button">Обрати</div>
+							</div>
+							<div id="formPreview" class="file__preview"></div>
 						</div>
-						<div id="formPreview" class="file__preview"></div>
+					</div>
+				<div class="form__item">
+					<div class="checkbox">
+						<input id="formAgreement" type="checkbox" name="agreement" class="form__item__checkbox _req" checked>
+						<label for="formAgreement" class="checkbox__lable"><span>Я надаю свою згоду на обробку персональних даних в відповідості з <a href="#">Умовами</a></span></label>
 					</div>
 				</div>
-			<div class="form__item">
-				<div class="checkbox">
-					<input id="formAgreement" type="checkbox" name="agreement" class="form__item__checkbox _req" checked>
-					<label for="formAgreement" class="checkbox__lable"><span>Я надаю свою згоду на обробку персональних даних в відповідості з <a href="#">Умовами</a></span></label>
-				</div>
+				<button type="submit" class="form__item__button">Відправити</button>
+				</form>	
 			</div>
-			<button type="submit" class="form__item__button">Відправити</button>
-			</form>	
-		</div>
-		<section id="contacts" class="footer__contacts">
-			<h2 class="footer__title">
-				контакти
-			</h2>
-			<nav class="contacts">
-				<ul class="contacts__list">
-					<li class="contacts__item"><a href="tel:+380994547313" class="contacts__link">+380994547313</a></li>
-					<li class="contacts__item"><a href="#" class="contacts__link">м. Полтава, вул. Шевченко, 54</a></li>
-					<li class="contacts__item"><a href="https://www.instagram.com/servisnyy_tsentr_refresh/" class="contacts__link">instagram</a></li>
-				</ul>
-				<!--инстаграм, телефон, фейсбук, связь(желательно), карта(очень просят) -->
-			</nav>
-		</section>
-	</footer>
+		<div id="map"></div>
+			<section id="contacts" class="footer__contacts">
+				<h2 class="footer__title">
+					контакти
+				</h2>
+				<nav class="contacts">
+					<ul class="contacts__list">
+						<li class="contacts__item"><a href="tel:+380994547313" class="contacts__link">+380994547313</a></li>
+						<li class="contacts__item"><a href="#" class="contacts__link">м. Полтава, вул. Шевченко, 54</a></li>
+						<li class="contacts__item"><a href="https://www.instagram.com/servisnyy_tsentr_refresh/" class="contacts__link">instagram</a></li>
+					</ul>
+					<!--инстаграм, телефон, фейсбук, связь(желательно), карта(очень просят) -->
+				</nav>
+			</section>
+		</footer>
+		<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAci59mU19-z_jJfn_fSYfC7yWIWlH60Do&callback=initMap&libraries=&v=weekly"
+		async
+	  ></script>
+		<script>
+			// Initialize and add the map
+			function initMap() {
+			  // The location of Uluru
+			  const uluru = { lat: 49.5850184, lng: 34.5451506 };
+			  // The map, centered at Uluru
+			  const map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 17,
+				center: uluru,
+			  });
+			  // The marker, positioned at Uluru
+			  const marker = new google.maps.Marker({
+				position: uluru,
+				map: map,
+			  });
+			}
+		  </script>
 	<script src="js/index.js"></script>
 	</body>
 </html>
