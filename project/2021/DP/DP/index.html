@@ -1,0 +1,169 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+
+<html lang="ru">
+
+	<head>
+		<!-- Кодировка страницы -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Заголовок страницы в браузере -->
+		<title>REFRESH</title>
+		<!-- Подключение CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
+	</head>
+	
+	<body >
+		<header class="header">
+			<a class="header__logo" href="#"><span>RE</span>FRESH</a>
+			<div class="header__burger">
+				<span></span>
+			</div>
+			<nav class="header__menu">
+				<ul class="header__menu-list">
+					<li class="header__menu-item"><a class="header__menu-link" href="#about">Про нас</a> </li>
+					<li class="header__menu-item"><a class="header__menu-link" href="#services">Послуги</a> </li>
+					<li class="header__menu-item"><a class="header__menu-link" href="#contacts">Контакти</a></li>
+				</ul>
+				
+			</nav>
+		</header>
+		<section id="about" class="about">
+			<div class="content">
+				<div class="content__container">
+					<ul class="content__container__list">
+						<li class="content__container__list__item">Безкоштовна консультацiя та дiагностика!</li>
+						<li class="content__container__list__item">Низькi цiни!</li>
+						<li class="content__container__list__item">Гарантiя якостi! </li>
+						<li class="content__container__list__item">REFRESH</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="services" class="services">
+			<h1 class="services__title">Послуги</h1>
+			<ul class="services__info">
+				<li class="services__item">
+					<img src="./img/smartphone.svg" alt="smartphone">
+					Ремонт телефонів, заміна сенсору і заміна модуля.
+				</li>
+				<li class="services__item">
+					<img src="./img/soldering.svg" alt="soldering">
+					Пайка роз'ємів у телефонах, ноутбуках, планшетах и ПК. 
+				</li>
+				<li class="services__item">
+					<img src="./img/clean.svg" alt="clean">
+					Сервисне обслуговування (чистка ноутбуків, комп'ютерів і телефонів).
+				</li>
+				<li class="services__item">
+					<img src="./img/settings.svg" alt="settings">
+					Ремонт моніторів. 
+				</li>
+				<li class="services__item">
+					<img src="./img/cogwheel.svg" alt="cogwheel">
+					Установка й налаштування операційних систем і програмного забезбечення.
+				</li>
+				<li class="services__item">
+					<img src="./img/diagnostic.svg" alt="diagnostic">
+					Безкоштовна консультація и діагностика! Низькі ціни! Гарантія якості!
+				</li>
+			</ul>
+			<div class="services__imgs">
+				<img class="services__img" src="img/do_posle1.png" alt="laptop">
+				<img class="services__img" src="img/do_posle2.png" alt="computer">
+				<img class="services__img" src="img/do_posle3.png" alt="tablet">
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="form">
+				<form action="#" id="form" class="form__footer">
+					<h2 class="form__title">Задати питання</h2>
+					<div class="form__item">
+						<label for="formName" class="form__item__label">Ім'я*:</label>
+						<input type="text" name="Name" id="formName" class="form__item__input _req"  >
+					</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__item__label">Пошта*:</label>
+						<input type="text" name="email" id="formEmail" class="form__item__input _req _email" >
+					</div>
+					<div class="form__item">
+						<labael for="formMessage" class="form__item__label">Повідомлення:</labael>
+						<textarea name="Message" id="formMessage" class="form__item__input" ></textarea>	
+					</div>
+					<div class="form__item">
+						<div class="form__item__label">Додати фото:</div>
+						<div class="file">
+							<div class="file__item">
+								<input id="formImage" name="Image" accept=".jpg, .jpeg, .png, .gif" type="file" class="file__item__input">
+								<div  class="file__button">Обрати</div>
+							</div>
+							<div id="formPreview" class="file__preview"></div>
+						</div>
+					</div>
+				<div class="form__item">
+					<div class="checkbox">
+						<input id="formAgreement" type="checkbox" name="agreement" class="form__item__checkbox _req" checked>
+						<label for="formAgreement" class="checkbox__lable"><span>Я надаю свою згоду на обробку персональних даних в відповідості з <a href="#">Умовами</a></span></label>
+					</div>
+				</div>
+				<button type="submit" class="form__item__button">Відправити</button>
+				</form>	
+			</div>
+			<section id="contacts" class="footer__contacts">
+				<div class="map" id="map"></div>
+				<nav class="contacts">
+					<h2 class="footer__title">
+						Контакти
+					</h2>
+					<ul class="contacts__list">
+						<li class="contacts__item">
+							<a href="tel:+380994547313" class="contacts__link">
+								<img src="img/icons/phonecall.svg" alt="phone">
+								+380994547313
+							</a>
+						</li>
+						<li class="contacts__item">
+							<a href="#" class="contacts__link">
+								<img src="img/icons/location.svg" alt="location">
+								м. Полтава, вул. Шевченко, 54
+							</a>
+						</li>
+						<li class="contacts__item">
+							<a href="https://www.instagram.com/servisnyy_tsentr_refresh/" class="contacts__link">
+								<img src="img/icons/instagram.svg" alt="instagram"> 
+								Instagram
+							</a>
+						</li>
+					</ul>
+					<!--инстаграм, телефон, фейсбук, связь(желательно), карта(очень просят) -->
+				</nav>
+			</section>
+		</footer>
+		<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAci59mU19-z_jJfn_fSYfC7yWIWlH60Do&callback=initMap&libraries=&v=weekly"
+		async
+	  ></script>
+		<script>
+			// Initialize and add the map
+			function initMap() {
+			  // The location of Uluru
+			  const uluru = { lat: 49.5850184, lng: 34.5451506 };
+			  // The map, centered at Uluru
+			  const map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 17,
+				center: uluru,
+			  });
+			  // The marker, positioned at Uluru
+			  const marker = new google.maps.Marker({
+				position: uluru,
+				map: map,
+			  });
+			}
+		  </script>
+	<script src="js/index.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="js/script.js"></script>
+	</body>
+</html>
